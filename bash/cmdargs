@@ -62,7 +62,7 @@ Setting output file to '$of'
 We have ${#hostnames[@]} host names to work on, they are:
 EOF
 	# produce the output list of hostnames
-	for (( index=0 ; index -lt ${#hostnames[@]} ; index++ )); do
+	for (( index=0 ; index < ${#hostnames[@]} ; index++ )); do
 		echo "Hostname $index is '${hostnames[$index]}'"
 	done
 fi
